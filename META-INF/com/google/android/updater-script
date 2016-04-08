@@ -332,10 +332,10 @@ package_extract_file("boot.img", "/dev/block/platform/msm_sdcc.1/by-name/boot");
 
 # Flash some Important Files 
 
-ui_print("Flashing Some Important Files");
-
-package_extract_dir("mm/ms013g/system", "/system");
-
+#ui_print("Flashing Some Important Files");
+#
+#package_extract_dir("mm/ms013g/system", "/system");
+####
 
 set_progress(1.000000);
 ui_print("Note to Devs ur not allowed to take this rom as base");
