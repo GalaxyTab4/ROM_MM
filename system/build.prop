@@ -17,12 +17,12 @@ ro.build.type=user
 ro.build.user=dpi
 ro.build.host=SWDD6115
 ro.build.tags=release-keys
-ro.build.flavor=ms013gxx-user
+ro.build.flavor=kltexx-user
 ro.product.model=SM-G900F
 ro.product.brand=samsung
-ro.product.name=ms013gxx
-ro.product.device=ms013g
-ro.product.board=MSM8228
+ro.product.name=kltexx
+ro.product.device=klte
+ro.product.board=MSM8974
 # ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,
 # use ro.product.cpu.abilist instead.
 ro.product.cpu.abi=armeabi-v7a
@@ -33,9 +33,9 @@ ro.product.cpu.abilist64=
 ro.product.manufacturer=samsung
 ro.product.locale=en-GB
 ro.wifi.channels=
-ro.board.platform=msm8226
+ro.board.platform=msm8974
 # ro.build.product is obsolete; use ro.product.device
-ro.build.product=ms013g
+ro.build.product=klte
 # Do not try to parse description, fingerprint, or thumbprint
 ro.build.description=kltexx-user 6.0.1 MMB29M G900FXXU1CPB2 release-keys
 ro.build.fingerprint=samsung/kltexx/klte:6.0.1/MMB29M/G900FXXU1CPB2:user/release-keys
@@ -46,7 +46,7 @@ ro.build.hidden_ver=G900FXXU1CPB2
 ro.config.rm_preload_enabled=0
 ro.build.changelist=7182592
 ro.product_ship=true
-ro.chipname=MSM8228
+ro.chipname=MSM8974PRO
 # end build properties
 
 #
