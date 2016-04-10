@@ -28,8 +28,21 @@ ui_print("");
 package_extract_dir("system", "/system");
 
 
-# Beta symlinks
+
 ui_print("symlinking ...");
+# Extra Synlinks
+symlink("toolbox", "/system/bin/df", "/system/bin/du",
+        "/system/bin/dd", "/system/bin/getevent", 
+        "/system/bin/iftop", "/system/bin/ioctl", "/system/bin/ionice",
+        "/system/bin/log", "/system/bin/ls", "/system/bin/lsof",
+        "/system/bin/mount", "/system/bin/nandread", "/system/bin/newfs_msdos",
+        "/system/bin/prlimit", "/system/bin/ps", "/system/bin/renice",
+        "/system/bin/sendevent", "/system/bin/start", "/system/bin/stop",
+        "/system/bin/top", "/system/bin/uptime", "/system/bin/watchprops");
+        
+symlink("grep", "/system/bin/egrep", "/system/bin/fgrep");   
+
+# Extra symlinks 2
 symlink("app_process32", "/system/bin/app_process");
 symlink("dalvikvm32", "/system/bin/dalvikvm");
 symlink("/data/misc/audio/mbhc.bin", "/system/etc/firmware/wcd9306/wcd9306_mbhc.bin");
