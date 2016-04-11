@@ -30,6 +30,7 @@ package_extract_dir("system", "/system");
 
 
 ui_print("symlinking ...");
+
 # Extra Synlinks
 symlink("toolbox", "/system/bin/df", "/system/bin/du",
         "/system/bin/dd", "/system/bin/getevent", 
@@ -42,7 +43,6 @@ symlink("toolbox", "/system/bin/df", "/system/bin/du",
         
 symlink("grep", "/system/bin/egrep", "/system/bin/fgrep");   
 
-# Extra symlinks 2
 symlink("app_process32", "/system/bin/app_process");
 symlink("dalvikvm32", "/system/bin/dalvikvm");
 symlink("/data/misc/audio/mbhc.bin", "/system/etc/firmware/wcd9306/wcd9306_mbhc.bin");
@@ -216,7 +216,7 @@ set_perm_recursive(0, 0, 0755, 0644, "/system/lib");
 set_perm_recursive(0, 0, 0755, 0644, "/system/vendor");
 set_perm_recursive(0, 0, 0755, 0644, "/system/framework");
 set_perm_recursive(0, 0, 0755, 0644, "/system/app");
-set_perm_recursive(0, 0, 0755, 0644, "/system/priv-app")
+set_perm_recursive(0, 0, 0755, 0644, "/system/priv-app");
 set_metadata_recursive("/system", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata_recursive("/system/bin", "uid", 0, "gid", 2000, "dmode", 0755, "fmode", 0755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/bin/ATFWD-daemon", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:atfwd_exec:s0");
